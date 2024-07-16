@@ -30,56 +30,42 @@
     margin-top: 20px;
   }
 
-  .red-button {
-    border: 1.5px solid hsl(356, 83%, 20%);
+  .btn:nth-of-type(1) {
+    background-color:  hsl(356, 83%, 51%);
+    border: 1.5px solid hsl(356, 83%, 25%);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
     outline: none;
   }
-  
-  
-  .green-button {
-    border: 1.5px solid hsl(85, 52%, 25%);
+  .btn:nth-of-type(2) {
+    background-color: hsl(85, 52%, 50%);
+    border: 1px solid hsl(85, 52%, 25%);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
     outline: none;
   }
-  
-  .yellow-button {
-    border: 1.5px solid hsl(52, 94%, 40%);
+  .btn:nth-of-type(3) {
+    background-color: hsl(176, 100%, 32%);
+    border: 1px solid hsl(176, 100%, 15%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    outline: none;
+  }
+  .btn:nth-of-type(4) {
+    background-color: hsl(52, 94%, 56%);
+    border: 1px solid hsl(52, 94%, 40%);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
     outline: none;
   }
 
-
-  .blue-button {
-    border: 1.5px solid hsl(176, 100%, 15%);
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    outline: none;
-  }
-
-
-
-  .red-button:hover {
+  .btn:hover {
     box-shadow: 5px 5px gray
   }
 
-  .green-button:hover {
-    box-shadow: 5px 5px gray
-  }
-
-  .yellow-button:hover {
-    box-shadow: 5px 5px gray
-  }
-
-  .blue-button:hover {
-    box-shadow: 5px 5px gray
-  }
 
   
