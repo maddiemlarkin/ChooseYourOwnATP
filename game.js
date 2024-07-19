@@ -4,13 +4,13 @@ const optionButtonsElement = document.getElementById('option-buttons')
 let state = {}
 
 function startGame() {
-  state =    {}                                            
-  showTextNode(1)            
-}                                                                                                                                                                                 
-                      
+  state = {}
+  showTextNode(1)
+}
+
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
-  textElement.innerText = textNode.text 
+  textElement.innerText = textNode.text
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
@@ -50,7 +50,7 @@ const textNodes = [
       },
       {
         text: 'No',
-        nextText: 4
+        nextText: 2
       },
       {
         text: 'I don\'t know what that means.',
@@ -60,15 +60,16 @@ const textNodes = [
   },
   {
     id: 2,
-    text: 'If there\'s no inventory available, Order Managers have two options:',
+    text: 'Is inventory available?',
     options: [
       {
-        text: 'Cut the order',
-        nextText: 12
+        text: 'Yes',
+        nextText: 3
       },
       {
-        text: 'Push order out'.
-        nextText: 6
+        text: 'No',
+        nextText: 4
+      }
     ]
   },
   {
@@ -83,16 +84,20 @@ const textNodes = [
   },
   {
     id: 4,
-    text: 'Order Manager will reference the Inventory Template AND ProdBase to see if inventory is available. Does it look like we have enough for the customer?',
+    text: 'Order Manager will reference the Inventory Template AND ProdBase to decide between the following:',
     options: [
         {
-          text: 'Nope, no inventory for me :(',
-          nextText: 2
+          text: 'Cut the Order',
+          nextText: 3
         },
         {
-          text: 'Yup, looks like I can take some stuff',
-          nextText: 
+          text: 'Reach out to ATP for help in getting the Line to a Good Status',
+          nextText: 5
         },
+        {
+          text: 'Push Order Out',
+          nextText: 6,
+        }
       ]
   },
   {
@@ -157,7 +162,7 @@ const textNodes = [
       },
       {
         text: 'Or Not To Cut',
-        nextText: 4
+        nextText: 2
       }
     ]
   },
@@ -200,9 +205,7 @@ const textNodes = [
         nextText: 1
       }
     ]
-  },
-  {
-    id: 14,
-    text: 'Looks like you might be able to get some!
   }
+]
+
 startGame()
