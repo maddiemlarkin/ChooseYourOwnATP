@@ -50,7 +50,7 @@ const textNodes = [
       },
       {
         text: 'No',
-        nextText: 2
+        nextText: 4
       },
       {
         text: 'I don\'t know what that means.',
@@ -162,7 +162,7 @@ const textNodes = [
       },
       {
         text: 'Or Not To Cut',
-        nextText: 2
+        nextText: 4
       }
     ]
   },
